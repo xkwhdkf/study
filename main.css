@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Cafe24Ohsquareair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root{
+  --mint: #9ddfd3;
+  --coral: #fd9795;
+  --beige: #e1cfbd;
+}
+/* common */
+html,body{height: 100%;margin: 0;padding: 0;font-family: 'Cafe24Ohsquareair';
+  min-width: 320px;}
+body{padding: 10px;}
+*{box-sizing: border-box;}
+ul{list-style-type: none;}
+/* title */
+.title{display: flex;justify-content: center;color: var(--coral);border: 5px solid var(--coral);padding: 10px;border-radius: 5px;font-weight: bold;font-size: 1.5rem;flex-flow: row nowrap;}
+/* main */
+main{display: flex;flex-flow: row nowrap;height: calc(100% - 60px);height: calc(100% - 60px);margin-top: 10px;}
+.side{display: flex;flex-flow: column nowrap;border: 5px solid #111;width: 120px;height: 100%;}
+.side>span{font-size: 1.5rem;line-height: 2;padding-left: 15px;}
+/* container */
+.container{display: flex;flex-flow: row wrap;flex: 1;border: 5px solid lightblue;margin-left: 15px;align-content: flex-start;overflow-y: scroll;}
+/* img{width: 200px;} */
+.content{border: 5px solid var(--beige);display: flex;flex-flow: column nowrap;width: 200px;padding: 10px;background-color: var(--beige);margin: 10px;}
+img>span{text-align: center;}
+
+
+@media (max-width: 1000px){
+  .content{
+      background: var(--coral);
+      border: 5px solid var(--coral);
+  }
+}
+
+@media (max-width: 700px){
+  .content{
+      background: var(--mint);
+      border: 5px solid var(--mint);
+  }
+}
+
